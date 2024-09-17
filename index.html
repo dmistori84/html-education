@@ -336,5 +336,95 @@
             </nav>
         </div>
     </footer>
+    <div class="backdrop is-open">  
+        <div class="modal">
+            <button type="button" class="modal-btn">
+                <svg class="modal-btn-icon" width="28" height="28">
+                    <use href="./images/icons.svg#icon-x-close"></use>
+                </svg>
+            </button>
+            <p class="modal-title section-title">Leave a review about <br><span>our chocolate</span></p>
+            <form class="modal-form">
+                <div class="modal-field">
+                  <label for="user-name" class="modal-label">Name</label>
+                  <div class="input-wrap">
+                    <input
+                      type="text"
+                      name="user-name"
+                      class="modal-input"
+                      required
+                      placeholder="Enter name"
+                      minlength="2"
+                      id="user-name"
+                    />
+                    <svg class="modal-icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-user"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div class="modal-field">
+                  <label for="user-email" class="modal-label">Email</label>
+                  <div class="input-wrap">
+                      <input
+                        type="email"
+                        name="user-email"
+                        class="modal-input"
+                        placeholder="Enter email"
+                        id="user-email"
+                      />
+                      <svg class="modal-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-mail"></use>
+                      </svg>
+                  </div>
+                </div>
+                <div class="modal-field">
+                  <label for="user-phone" class="modal-label">Phone number</label>
+                  <div class="input-wrap">
+                      <input
+                        type="tel"
+                        name="user-phone"
+                        class="modal-input"
+                        placeholder="Enter phone number"
+                        required
+                        maxlength="15"
+                        value="+380"
+                        id="user-phone"
+                      />
+                      <svg class="modal-icon" width="24" height="24">
+                        <use href="./images/icons.svg#icon-phone"></use>
+                      </svg>
+                  </div>
+                </div>
+                <div class="modal-field">
+                  <label for="user-text" class="modal-label">Comment</label>
+                  <textarea
+                    name="user-text"
+                    id="user-text"
+                    class="modal-textarea"
+                    placeholder="Enter text"
+                  ></textarea>
+                </div>
+                <div class="modal-field">
+                  <input
+                    class="modal-check visually-hidden"
+                    type="checkbox"
+                    name="terms"
+                    id="terms"
+                    required
+                  />
+                  <label class="check-text" for="terms">
+                    <span class="check-text-box">
+                      <svg class="check-text-icon" width="10" height="10">
+                        <use href="./images/icons.svg#icon-check"></use>
+                      </svg>
+                    </span>
+                    I accept the terms and conditions of the
+                    <a href="#" class="modal-conditions">Privacy Policy</a></label
+                  >
+                </div>
+                <button type="submit" class="modal-form-btn">Send</button>
+              </form>
+        </div>      
+    </div>
 </body>
 </html>
